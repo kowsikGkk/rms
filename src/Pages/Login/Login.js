@@ -8,6 +8,7 @@ const Login = () => {
       console.log('Failed:', errorInfo);
     };
   return (
+    <div>
     <Form
       name="basic"
       labelCol={{
@@ -17,7 +18,7 @@ const Login = () => {
         span: 16,
       }}
       style={{
-        maxWidth: 600,
+        maxWidth: 600
       }}
       initialValues={{
         remember: true,
@@ -74,6 +75,7 @@ const Login = () => {
         </Button>
       </Form.Item>
     </Form>
+    </div>
   )
 }
 export default Login;
